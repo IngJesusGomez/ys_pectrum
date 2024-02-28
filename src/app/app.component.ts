@@ -3,17 +3,22 @@ import { HttpClient } from '@angular/common/http';
 import { Component, afterRender, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { tap } from 'rxjs';
+import { LoginComponent } from './login/login.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, LoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   // ya no utilizamos el tipo de dato por que solo usa la inferencia
   city = 'Mexico'
+  userName = 'Yisus'
+
+  //Recuperamos desde el hijo algo
+  recoverFromLogin = ''
   // title = 'ys-pectrum';
   private readonly http = inject(HttpClient);
   todos$ = this.http.get<{title: string}[]>('https://jsonplaceholder.typicode.com/todos').pipe(tap((res) => {
@@ -34,7 +39,14 @@ export class AppComponent {
     })
   }
 
+  //Meotdo ppara recuperar datos desde un api
   getTodo(){
     this.http.get('https://jsonplaceholder.typicode.com/todos/1').subscribe(res => console.log("Cargado desde el boton, top 10"));
+  }
+
+  //metodo para recuperar los datos desde el logincomponent
+  getFromLogin(messageLogin:string){
+    this.recoverFromLogin = messageLogin
+    console.log(this.recoverFromLogin)
   }
 }
