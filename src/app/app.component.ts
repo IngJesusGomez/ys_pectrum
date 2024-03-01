@@ -37,7 +37,10 @@ export class AppComponent {
     afterRender(()=>{
       localStorage.setItem('jwt','dsdsfsdf')
     })
+    
+  
   }
+
 
   //Meotdo ppara recuperar datos desde un api
   getTodo(){
