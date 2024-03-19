@@ -1,6 +1,36 @@
-// *{
-// box-sizing: border-box;
-// }
+.container-login{
+    // background-color: aqua;
+    background-image: url('../../../assets/background/fondo3.jpeg');
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+.img-proyecto{
+    height: 16vh;
+    width: 30vh;
+}
+
+.box {
+    display: flex;
+    align-items: stretch;
+  }
+
+.container-logo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 50vh;
+    width: 45vw;
+   
+}
 
 h1 {
     font-weight: 700;
@@ -154,6 +184,7 @@ input {
     width: 768px;
     max-width: 100%;
     min-height: 500px;
+    margin-right: 100px;
 }
 
 .form-container {
@@ -248,7 +279,7 @@ input {
     transform: translateX(50%);
 }
 
-.overlay-panle {
+.overlay-panel {
     position: absolute;
     display: flex;
     align-items: center;
@@ -258,7 +289,7 @@ input {
     text-align: center;
     top: 0;
     height: 100%;
-    width: 50%;
+    width: 40%;
     transform: translateX(0);
     transition: transform 0.6s ease-in-out;
 }
@@ -298,3 +329,4 @@ input {
 .social-container a:hover {
     border: 1px solid #4bb6b7;
 }
+
