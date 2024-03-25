@@ -6,14 +6,14 @@
         <form action="" class="sign-in-form">
             <h2 class="title">Inicio de sesión</h2>
             <div class="input-field">
-                <i><mat-icon>person</mat-icon></i>
-                <input type="text" placeholder="Nombre">
+                <i><mat-icon>alternate_email</mat-icon></i>
+                <input type="text" placeholder="Correo Electrónico">
             </div>
             <div class="input-field">
                 <i><mat-icon>no_encryption</mat-icon></i>
                 <input type="password" placeholder="Contraseña">
             </div>
-            <input type="submit" value="Login" class="btn">
+            <input type="submit" value="Aceptar" class="btn">
             <p class="social-text">o usa tu cuenta</p>
             <div class="social-media">
                 <a href="#" class="social-icon">
@@ -26,7 +26,7 @@
                     <mat-icon>cloud_circle</mat-icon>
                 </a>
             </div>
-            <p class="account-text">Tienes una cuenta? <a href="#" id="sign-up-btn2" (click)="registerButton2()">Sing up</a></p>
+            <p class="account-text">¿Aún no tienes una cuenta?<a class="register-text" href="#" id="sign-up-btn2" (click)="registerButton2()">Registrate</a></p>
         </form>
 
         <!-- FORMULARIO REGISTRO -->
@@ -34,17 +34,17 @@
             <h2 class="title">Registrate</h2>
             <div class="input-field">
                 <i><mat-icon>person</mat-icon></i>
-                <input type="text" placeholder="Usuario">
+                <input type="text" placeholder="Nombre usuario">
             </div>
             <div class="input-field">
                 <i><mat-icon>alternate_email</mat-icon></i>
-                <input type="text" placeholder="Correo Electronico">
+                <input type="text" placeholder="Correo Electrónico">
             </div>
             <div class="input-field">
                 <i><mat-icon>no_encryption</mat-icon></i>
                 <input type="password" placeholder="Contraseña">
             </div>
-            <input type="submit" value="Sing up" class="btn">
+            <input type="submit" value="Registrarse" class="btn">
             <p class="social-text">o usa tu cuenta</p>
             <div class="social-media">
                 <a href="#" class="social-icon">
@@ -63,17 +63,17 @@
     <div class="panels-container">
     <div class="panel left-panel">
         <div class="content">
-            <h3>Member og brand?</h3>
-            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno </p>
-            <button class="btn" id="sign-in-btn" (click)="loginButton()" >Sign in</button>
+            <h3>Comienza tu viaje ahora</h3>
+            <p>Si tienes una cuenta, inicia sesión aquí y diviértete.</p>
+            <button class="btn" id="sign-in-btn" (click)="loginButton()" >Iniciar sesión</button>
         </div>
         <img src="../../../assets/image/signin.svg" alt="" class="image">
     </div>
     <div class="panel right-panel">
         <div class="content">
-            <h3>New to brand?</h3>
-            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno </p>
-            <button class="btn" id="sign-up-btn" (click)="registerButton()" >Sign up</button>
+            <h3>Comienza tu viaje ahora</h3>
+            <p>Si aún no tienes una cuenta, únete a nosotros y comienza tu viaje.</p>
+            <button class="btn" id="sign-up-btn" (click)="registerButton()" >Registrarse</button>
         </div>
         <img src="../../../assets/image/signup.svg" alt="" class="image">
     </div>

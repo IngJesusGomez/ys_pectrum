@@ -144,10 +144,12 @@ input {
 a{
     text-decoration: none;
 }
-// .social-icon:hover{
-// color:#df4adf ;
-// border-color: #df4adf;
-// }
+
+.social-icon:hover{
+    color: #df4adf;
+    border-color: #df4adf;
+}
+
 .panels-container{
      position: absolute;
      top:0;
@@ -205,6 +207,11 @@ a{
 
 .account-text{
     display: none;
+}
+.register-text:hover{
+    color: #df4adf;
+    border-color: #df4adf;
+    
 }
 
 // //animación
@@ -273,13 +280,22 @@ transform: translate(0);
         display: initial;
         margin-top: 30px;
     }
-    
+    // .social-icon {
+    //     color: #444;
+    //     border-color: #444;
+    //     transition: color 0.3s, border-color 0.3s; /* Agrega una transición suave */
+    // }
+    // .social-icon:hover {
+    //     color: #df4adf;
+    //     border-color: #df4adf;
+    // }   
 }
 @media (max-width:320px){
     form{
         width: 90%;
     }
 }
+
 
 
 
